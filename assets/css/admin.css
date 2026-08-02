@@ -1,0 +1,56 @@
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+}
+
+.admin-form {
+  width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.admin-form button {
+  background: #0a3d62;
+  color: white;
+  border: none;
+}
+
+.admin-panel {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.admin-links a {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 20px;
+  background: #ff9f1a;
+  color: black;
+  text-decoration: none;
+}
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.success { color: green; }
+.error { color: red; }
+.center { text-align: center; }

@@ -1,0 +1,109 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: hwb(0 5% 95%);
+}
+a {
+    color: hwb(206 23% 17%);
+    text-decoration: none;
+    margin-right: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: hwb(75 23% 21%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hwb(75 23% 21%);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: hwb(75 23% 21%);
+    color: white;
+}
+td {
+    background-color: #f9f9f9;
+}
+tr:nth-child(even) td {
+    background-color: #e9f5ff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .menu-toggle {
+        display: block;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu.active {
+        display: block;
+    }
+}
+
+
+/* Logout link */
+a.logout {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a.logout:hover {
+    background-color: #c82333;
+}

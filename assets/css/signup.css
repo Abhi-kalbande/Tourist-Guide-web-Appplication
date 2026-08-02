@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: rgb(12, 12, 12);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px  rgba(255, 215, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    border: 2px solidhwb(75 23% 21%);
+
+}
+.logo img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    border: 3px solid #fff; /* Optional: Adds a white border for better visibility */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a soft shadow effect */
+  }
+
+h2 {
+    color: #fabd44;
+    margin-bottom: 20px;
+    color: #f7f8f6;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 5px;
+    color: #ffd700;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.input-group input:focus {
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid #ffd700;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: hwb(75 23% 21%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color:  hwb(75 23% 21%);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px hwb(75 23% 21%);
+}
+
+p {
+    margin-top: 15px;
+    color: #f8f6f6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

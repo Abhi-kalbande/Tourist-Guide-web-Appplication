@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #404242;
+    padding: 15px 50px;
+    color: #f3eeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #fff; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://t4.ftcdn.net/jpg/02/88/10/51/360_F_288105149_rleDz7UQkzXzNwYBzMdd1GrGjCvcni3U.jpg") no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* Styling for the End text */
+.styled-text {
+    font-style: italic; /* Italic text */
+    font-weight: bold;  /* Bold text */
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #007BFF; /* Blue color */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Centering the button */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section .logo {
+        width: 80px; /* Adjust the size as needed */
+        height: 80px;
+        border-radius: 50%; /* Makes the image round */
+        object-fit: cover; /* Ensures the image fills the circle properly */
+        border: 3px solid #fff; /* Optional: Adds a white border for better visibility */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a soft shadow effect */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9800;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff9800;
+}
+
+.query-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.query-btn:hover {
+    background: #e68900;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+.image-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-table td {
+    padding: 10px;
+}
+
+.image-table img {
+    width: 100%;
+    max-width: 300px; /* Adjust for consistency */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-table img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}

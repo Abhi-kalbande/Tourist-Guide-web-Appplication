@@ -261,7 +261,7 @@
                       </p>
       
                       <h3 class="h3 card-title">
-                        <a href="Varanasi.php">Varanasi</a>
+                        <a href="/newprojectdemo/pages/Varanasi.php">Varanasi</a>
                       </h3>
       
                       <p class="card-text">
@@ -320,8 +320,9 @@
                         <a href="/newprojectdemo/pages/Amritsar.php">Punjab</a>
                       </p>
       
+                                                                                                                                                                                                                                 
                       <h3 class="h3 card-title">
-                        <a href="Amritsar.php">Amritsar</a>
+                        <a href="/newprojectdemo/pages/Amritsar.php">Amritsar</a>
                       </h3>
       
                       <p class="card-text">

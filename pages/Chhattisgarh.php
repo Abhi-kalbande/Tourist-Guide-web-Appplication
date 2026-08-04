@@ -76,7 +76,7 @@
         <center>
             <h3 class="styled-text">End</h3>
             <h1>
-                <a href="../contact_us.php" class="btn">Select Package</a>
+                <h1><a href="contact us.php" class="btn">Select Package</a></h1>
             </h1>
         </center>
 

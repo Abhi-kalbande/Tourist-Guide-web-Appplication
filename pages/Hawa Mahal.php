@@ -64,13 +64,6 @@
                       <li>Witness the city from a hot air balloon ride.</li>
                   </ul>
               </div>
-              
-              <div class="section">
-                  <h2>How to Reach Jaipur</h2>
-                  <p><strong>By Air:</strong> Jaipur International Airport is well-connected to major Indian and international cities.</p>
-                  <p><strong>By Train:</strong> Jaipur Junction is the main railway station with trains from Delhi, Mumbai, and other cities.</p>
-                  <p><strong>By Road:</strong> Jaipur is connected via NH-8 to Delhi and other major cities.</p>
-              </div>
           </div>
             <center>
               <h3 class="styled-text">End</h3>

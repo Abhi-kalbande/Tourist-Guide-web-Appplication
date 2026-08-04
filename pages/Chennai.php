@@ -71,21 +71,6 @@
                   <li><strong>Shop at T. Nagar:</strong> Famous for <span class="highlight">Kanjivaram sarees and jewelry</span>.</li>
                   <li><strong>Attend Cultural Performances:</strong> December hosts the <span class="highlight">Margazhi Music Festival</span>, showcasing Carnatic music and Bharatanatyam dance.</li>
               </ul>
-      
-              <h2>How to Reach Chennai?</h2>
-      
-              <h3>By Train</h3>
-              <ul>
-                  <li><strong>Chennai Central Railway Station:</strong> 3 km from the city center.</li>
-                  <li><strong>Chennai Egmore Railway Station:</strong> 2 km from the city center.</li>
-              </ul>
-      
-              <h3>By Bus</h3>
-              <p>The <span class="highlight">Chennai Mofussil Bus Terminus (CMBT)</span> provides bus services to cities like <span class="highlight">Pondicherry (151 km) and Tirupati (133 km)</span>.</p>
-      
-              <h3>By Air</h3>
-              <p>The <span class="highlight">Chennai International Airport</span> is <span class="highlight">14 km from the city center</span> and connects to domestic and international destinations.</p>
-
           </div>
           <center>
             <h3 class="styled-text">End</h3>

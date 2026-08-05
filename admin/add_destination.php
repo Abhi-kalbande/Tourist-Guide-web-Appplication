@@ -1,10 +1,10 @@
 <?php
 session_start();
-include('db_connection.php');
+include('../config/db_connection.php');
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin_logged_in'])) {
-    header("Location: Admin_login.php");
+    header("Location:../admin/Admin_login.php");
     exit();
 }
 
@@ -20,11 +20,11 @@ $dest_result = $conn->query($dest_query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations</title>
-    <link rel="stylesheet" href="Admin_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Admin_dashboard.css">
 </head>
 <body>
     <h1>Destinations</h1>
-    <a href="insert_destination.php">Add New Destination</a>
+    <a href="../admin/insert_destination.php">Add New Destination</a>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -47,7 +47,7 @@ $dest_result = $conn->query($dest_query);
     </table>
 
     <br>
-    <a href="admin_dashboard.php">Back to Dashboard</a>
+    <a href="../config/db_connection.php">Back to Dashboard</a>
 </body>
 </html>
 

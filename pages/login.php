@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify password
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_email'] = $email; // Store session
-            header("Location: index.php"); // Redirect to index.html
+            header("Location: ../index.php"); // Redirect to index.php
             exit();
         } else {
             $error = "Invalid email or password!";

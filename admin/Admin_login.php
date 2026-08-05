@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('db_connection.php');
+include('../config/db_connection.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $admin_user = $_POST['admin_user'];
@@ -39,7 +39,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
-    <link rel="stylesheet" href="Admin_login.css">
+    <link rel="stylesheet" href="../assets/css/Admin_login.css">
 </head>
 <body>
     <div class="login-container">

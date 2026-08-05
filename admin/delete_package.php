@@ -1,9 +1,9 @@
 <?php
-include 'db_connection.php'; // Your database connection file
+include '../config/db_connection.php'; // Your database connection file
 
 if (isset($_GET['id'])) {
     $package_id = $_GET['id'];
-    $sql = "DELETE FROM bookings WHERE id = ?";
+    $sql = "DELETE FROM packages WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $package_id);
 

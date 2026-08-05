@@ -1,5 +1,5 @@
 <?php
-include('db_connection.php'); 
+include('../config/db_connection.php'); 
 
 $admin_username = "admin";
 $admin_password = "admin123"; 

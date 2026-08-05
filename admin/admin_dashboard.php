@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('db_connection.php');
+include('../config/db_connection.php');
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin_logged_in'])) {
@@ -41,12 +41,14 @@ $dest_result = $conn->query($dest_query);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="Admin_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Admin_dashboard.css">
 </head>
+
 <body>
     <h1>Welcome, <?php echo $_SESSION['admin_user']; ?>!</h1>
     <a href="logout.php">Logout</a>
@@ -82,7 +84,8 @@ $dest_result = $conn->query($dest_query);
                 <td><?php echo $user['full_name']; ?></td>
                 <td><?php echo $user['email']; ?></td>
                 <td>
-                    <a href="delete_user.php?id=<?php echo $user['id']; ?>" onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
+                    <a href="delete_user.php?id=<?php echo $user['id']; ?>"
+                        onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
                 </td>
             </tr>
         <?php } ?>
@@ -90,7 +93,7 @@ $dest_result = $conn->query($dest_query);
 
     <!-- Destination Management -->
     <h2>Destinations</h2>
-    <a href="add_destination.php">Add Destination</a>
+    <a href="../admin/add_destination.php">Add Destination</a>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -106,7 +109,8 @@ $dest_result = $conn->query($dest_query);
                 <td><?php echo $dest['price']; ?></td>
                 <td><?php echo $dest['description']; ?></td>
                 <td>
-                    <a href="delete_destination.php?id=<?php echo $dest['id']; ?>" onclick="return confirm('Are you sure you want to delete this destination?');">Delete</a>
+                    <a href="delete_destination.php?id=<?php echo $dest['id']; ?>"
+                        onclick="return confirm('Are you sure you want to delete this destination?');">Delete</a>
                 </td>
             </tr>
         <?php } ?>
@@ -137,6 +141,7 @@ $dest_result = $conn->query($dest_query);
         <?php } ?>
     </table>
 </body>
+
 </html>
 
 <?php

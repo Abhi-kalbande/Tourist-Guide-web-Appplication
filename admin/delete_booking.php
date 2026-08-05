@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('db_connection.php');
+include('../config/db_connection.php');
 
 if (!isset($_SESSION['Admin_logged_in'])) {
     header("Location: Admin_login.php");

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('db_connection.php');
+include('../config/db_connection.php');
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin_logged_in'])) {
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Destination</title>
-    <link rel="stylesheet" href="Admin_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Admin_dashboard.css">
 </head>
 <body>
     <h1>Add New Destination</h1>
@@ -54,6 +54,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Add Destination</button>
     </form>
     <br>
-    <a href="destination.php">Back to Destinations</a>
+    <a href="../pages/destination.php">Back to Destinations</a>
+    <a href="../admin/admin_dashboard.php">Back to Dashboard</a>
+    
 </body>
 </html>

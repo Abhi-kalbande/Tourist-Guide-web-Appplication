@@ -441,7 +441,7 @@
                 </div>
                 <div class="image-container">
                   <img src="Traveling photo\1.Srinagar.jpg" alt="Image 5">
-                  <a href="/newprojectdemo/pages/shrinagar.php"><h2>shrinagar</h2></a>
+                  <a href="/newprojectdemo/pages/Srinagar.php"><h2>shrinagar</h2></a>
                 </div>
                 <div class="image-container">
                   <img src="Traveling photo\1.Varanasi.jpg" alt="Image 6">
@@ -473,7 +473,7 @@
                 </div>
                 <div class="image-container">
                   <img src="Traveling photo\1.Amritsar.jpg" alt="Image 11">
-                  <a href="/newprojectdemo/pages/Amritser1.php"><h2>Amritsar</h2></a>
+                  <a href="/newprojectdemo/pages/Amritsar.php"><h2>Amritsar</h2></a>
                 </div>
                 <div class="image-container">
                   <img src="Traveling photo\1.Agra_.jpg" alt="Image 12">

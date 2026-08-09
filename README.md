@@ -326,7 +326,9 @@ If you like this project, please consider giving it a ⭐ on GitHub.
 Your support motivates me to build more open-source and full-stack projects.
 
 ---
-
+# 📄 Note
+i made changes in this application this is undergoing project
+---
 # 📄 License
 
 This project is created for educational and portfolio purposes.

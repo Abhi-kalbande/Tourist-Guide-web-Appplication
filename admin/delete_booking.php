@@ -15,3 +15,4 @@ if (isset($_GET['id'])) {
 header("Location: admin_dashboard.php");
 exit();
 ?>
+

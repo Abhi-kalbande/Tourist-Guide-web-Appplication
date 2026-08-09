@@ -243,13 +243,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
 
                     </div>
-
                     <div class="form-actions">
                         <a href="view_destinations.php" class="secondary-btn">
                             <i class="bi bi-arrow-left"></i>
                             Cancel
                         </a>
-
                         <button type="submit" class="primary-btn">
                             <i class="bi bi-check2-circle"></i>
                             Add Package

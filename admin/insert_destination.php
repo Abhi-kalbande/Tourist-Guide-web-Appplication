@@ -167,7 +167,6 @@ $adminName = $_SESSION['admin_user'] ?? 'Admin';
                     </div>
                 </div>
             <?php endif; ?>
-
             <section class="form-card">
 
                 <div class="form-card-header">
@@ -248,7 +247,6 @@ $adminName = $_SESSION['admin_user'] ?? 'Admin';
                         </div>
 
                     </div>
-
                     <div class="form-actions">
                         <a href="view_destinations.php" class="secondary-btn">
                             <i class="bi bi-arrow-left"></i>
@@ -260,10 +258,8 @@ $adminName = $_SESSION['admin_user'] ?? 'Admin';
                             Create Package
                         </button>
                     </div>
-
                 </form>
             </section>
-
             <footer class="page-footer">
                 Travel Tales Admin Panel &copy; <?php echo date('Y'); ?>
             </footer>

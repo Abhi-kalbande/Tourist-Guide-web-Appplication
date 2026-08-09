@@ -424,9 +424,7 @@ $packageResult = $conn->query("
                         <?php endif; ?>
                     </div>
                 </div>
-
             </section>
-
             <footer class="dashboard-footer">
                 Travel Tales Admin Panel &copy; <?php echo date('Y'); ?>
             </footer>

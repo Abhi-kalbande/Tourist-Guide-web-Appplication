@@ -1,20 +1,36 @@
 <?php
-include '../config/db_connection.php'; // Your database connection file
+session_start();
+require_once "../config/db_connection.php";
 
-if (isset($_GET['id'])) {
-    $package_id = $_GET['id'];
-    $sql = "DELETE FROM packages WHERE id = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $package_id);
-
-    if ($stmt->execute()) {
-        echo "Package deleted successfully.";
-    } else {
-        echo "Error deleting package.";
-    }
-    $stmt->close();
-    $conn->close();
+if (empty($_SESSION['admin_logged_in'])) {
+    header("Location: Admin_login.php");
+    exit;
 }
-header("Location: admin_dashboard.php");
-exit();
+
+$id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+
+if (!$id) {
+    header("Location: view_destinations.php?error=invalid_id");
+    exit;
+}
+
+$stmt = $conn->prepare("DELETE FROM packages WHERE id = ?");
+
+if (!$stmt) {
+    header("Location: view_destinations.php?error=delete_failed");
+    exit;
+}
+
+$stmt->bind_param("i", $id);
+$stmt->execute();
+
+if ($stmt->affected_rows > 0) {
+    header("Location: view_destinations.php?deleted=1");
+} else {
+    header("Location: view_destinations.php?error=not_found");
+}
+
+$stmt->close();
+$conn->close();
+exit;
 ?>

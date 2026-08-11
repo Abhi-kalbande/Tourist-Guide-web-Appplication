@@ -1,0 +1,36 @@
+body {
+    background: #f5f6fa;
+}
+
+.stats-card {
+    max-width: 250px;
+}
+
+.search-box {
+    width: 250px;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+body {
+    background: #f5f6fa;
+}
+
+.user-card {
+    max-width: 800px;
+    margin: auto;
+}
+
+.user-card p {
+    margin-top: 5px;
+    color: #555;
+}

@@ -6,7 +6,6 @@ if (empty($_SESSION['admin_logged_in'])) {
     header("Location: Admin_login.php");
     exit;
 }
-
 function e($value): string
 {
     return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');

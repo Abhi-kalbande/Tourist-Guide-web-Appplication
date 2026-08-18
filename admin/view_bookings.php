@@ -214,6 +214,7 @@ $totalMembers = (int) ($membersResult->fetch_assoc()['total'] ?? 0);
                         <?php endif; ?>
                     </form>
 
+                    
                     <div class="table-responsive">
                         <table class="booking-table">
                             <thead>

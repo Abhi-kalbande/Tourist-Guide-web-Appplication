@@ -227,10 +227,11 @@ $totalMembers = (int) ($membersResult->fetch_assoc()['total'] ?? 0);
                         <thead>
                         <tr>
                             <th>Customer</th>
-                            <th>Tour</th>
-                            <th>Travellers</th>
-                            <th>Booking Date</th>
-                            <th>Contact</th>
+<th>Tour</th>
+<th>Travellers</th>
+<th>Booking Date</th>
+<th>Contact</th>
+<th>Action</th>
                         </tr>
                         </thead>
 

@@ -358,8 +358,9 @@ $packageResult = $conn->query("
                                 <h3>Recent Users</h3>
                                 <p>Latest registered customers</p>
                             </div>
-                            <a href="add_user.php" class="icon-action" title="Add user">
-                                <i class="bi bi-plus"></i>
+
+                            <a href="view_users.php" class="view-all">
+                                View all <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
 

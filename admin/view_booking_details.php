@@ -45,7 +45,7 @@ if (!$booking) {
           rel="stylesheet">
 
     <link rel="stylesheet"
-          href="../assets/css/view_booking_details.css">
+          href="assets/css/view_users.css">
 </head>
 
 <body>

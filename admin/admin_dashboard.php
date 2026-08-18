@@ -154,6 +154,7 @@ $packageResult = $conn->query("
                     <i class="bi bi-person-plus"></i>
                     <span>Add User</span>
                 </a>
+
                 <a href="view_users.php" class="nav-link">
                     <i class="bi bi-people"></i>
                     <span>Users</span>

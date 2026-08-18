@@ -1,5 +1,5 @@
 <?php
-include "../db_connection.php";
+include('../config/db_connection.php'); 
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     header("Location: view_users.php");

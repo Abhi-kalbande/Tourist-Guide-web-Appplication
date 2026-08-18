@@ -1,5 +1,5 @@
 <?php
-include "../db_connection.php";
+include('../config/db_connection.php'); 
 
 $sql = "SELECT id, name, email, created_at
         FROM user_information
@@ -101,6 +101,11 @@ $total_users = mysqli_num_rows($result);
                                         <a href="view_user_details.php?id=<?php echo $user['id']; ?>"
                                             class="btn btn-sm btn-primary">
                                             View
+                                        </a>
+
+                                        <a href="edit_user.php?id=<?php echo $user['id']; ?>"
+                                            class="btn btn-sm btn-warning">
+                                            Edit
                                         </a>
 
                                         <a href="delete_user.php?id=<?php echo $user['id']; ?>"

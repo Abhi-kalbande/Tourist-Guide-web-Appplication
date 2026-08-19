@@ -1,18 +1,29 @@
 <?php
 session_start();
-include('../config/db_connection.php');
 
-if (!isset($_SESSION['Admin_logged_in'])) {
-    header("Location: Admin_login.php");
-    exit();
+require_once __DIR__ . '/../config/db_connection.php';
+
+if (empty($_SESSION['admin_logged_in'])) {
+    header('Location: Admin_login.php');
+    exit;
 }
 
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-    mysqli_query($conn, "DELETE FROM bookings WHERE id='$id'");
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+
+    $id = (int) $_GET['id'];
+
+    $stmt = $conn->prepare(
+        "DELETE FROM bookings WHERE id = ?"
+    );
+
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+
+    $stmt->close();
 }
 
-header("Location: admin_dashboard.php");
-exit();
+$conn->close();
+
+header('Location: view_bookings.php');
+exit;
 ?>
-
